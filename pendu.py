@@ -9,8 +9,7 @@ def main():
 
     continue_game = True
     while continue_game:
-        # guess_word = fonctions.choose_word()
-        guess_word = "TOTO"
+        guess_word = fonctions.choose_word()
         rounds_left = donnees.rounds
         found_word = []
         found_letters = []
