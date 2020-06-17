@@ -6,13 +6,14 @@ import gamedata
 import random
 import os
 
+
 def get_playername():
-    os.system("clear")
+    # os.system("clear")
     playername = input("*** Bienvenue ! Tu t'apprêtes à jouer au Pendu ! *** \n\nComment t'appelles-tu ? ")
     playername.capitalize()
 
     if not playername.isalnum():
-        print("Ce nom est invalide.")
+        print("{} est un nom invalide".format(playername))
         get_playername()
 
     return playername

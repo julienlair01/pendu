@@ -5,6 +5,8 @@ import fonctions
 import gamedata
 import os
 
+playername = ""
+
 def main():  
     all_scores = fonctions.get_scores() # Retrieve all_scores from saved file
     playername = fonctions.get_playername() # Ask player for her name
