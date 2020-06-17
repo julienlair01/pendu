@@ -14,9 +14,9 @@ def get_playername():
 
     if not playername.isalnum():
         print("{} est un nom invalide".format(playername))
-        get_playername()
-
-    return playername
+        return get_playername()
+    else:
+        return playername
 
 def choose_word():
     chosen_word = random.choice(gamedata.words_list)
@@ -28,9 +28,9 @@ def get_letter():
    
     if not input_letter.isalpha() or len(input_letter) > 1:
         print("Merci d'entrer une lettre valide.")
-        get_letter()
-
-    return input_letter
+        return get_letter()
+    else:
+        return input_letter
 
 def update_found_word(input_letter, guess_word, found_letters):
     found_word = ""
